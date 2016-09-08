@@ -2,7 +2,7 @@ package com.ipartek.formacion.service;
 
 import com.ipartek.formacion.pojo.IGuerreroHablable;
 
-public class GuerreroHablaService {
+public class GuerreroHablaService implements IGuerreroHablaService {
 
 	private IGuerreroHablable guerrero;
 	// Spring se encarga de crear el objeto
