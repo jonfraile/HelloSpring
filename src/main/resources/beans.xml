@@ -6,9 +6,15 @@
     
     <bean id="guerreroHumano" class="com.ipartek.formacion.pojo.GuerreroHumano"></bean>
     <bean id="guerreroOrco" class="com.ipartek.formacion.pojo.GuerreroOrco"></bean>
+    <bean id="guerreroNoMuerto" class="com.ipartek.formacion.pojo.GuerreroNoMuerto">
+    	<property name="nivel" value="300"></property>
+    	<property name="nombre" value="huesitos"></property>
+    	<property name="puntosVida" value="300"></property>
+    </bean>
 
 	<bean id="servicioGuerrero" class="com.ipartek.formacion.service.GuerreroHablaService">
-		<property name="guerrero" ref="guerreroOrco" ></property>
-	</bean>    
+		<property name="guerrero" ref="guerreroNoMuerto" ></property>
+	</bean>
+	
     
 </beans>    

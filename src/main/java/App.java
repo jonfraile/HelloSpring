@@ -10,7 +10,7 @@ public class App {
 		/*
 		 * final GuerreroHablaService service = new GuerreroHablaService();
 		 * System.out.println(service.hablar());
-		 * 
+		 *
 		 * final IGuerreroHablable gHumano = new GuerreroHumano();
 		 * service.setGuerrero(gHumano); System.out.println(service.hablar());
 		 */
@@ -18,6 +18,9 @@ public class App {
 		final ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 		final GuerreroHablaService service = (GuerreroHablaService) context.getBean("servicioGuerrero");
 		System.out.println(service.hablar());
+
+		System.out.println("Datos del Guerrero:");
+		System.out.println(service.getGuerrero().toString());
 
 	}
 
